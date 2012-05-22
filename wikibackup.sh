@@ -16,8 +16,12 @@ Images="/var/lib/mediawiki/images/"
 
 
 
+
 echo "Checking to make sure that the backup directory exists"
-if [ -f $backupdir ] then
+
+if [ -d $backupdir ]
+then
+
         echo Backupdirectory: $backupdir exists!
 else
         ./mountUSB #run the mount USB script
