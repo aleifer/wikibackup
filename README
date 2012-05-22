@@ -1,0 +1,15 @@
+This is a simple set of wikibackupscripts. It is designed to work with turnkey linuxe's mediawiki. It was written for mediawiki 1.14. 
+
+It does SQL dump, an XML dump and it copies over the supporting files. It auto tar gzips them. 
+
+If there are more than a specified number of files in the target directory it will through a specified number of the  oldest. This way you have a rolling backup, but it doesn't overflow.
+
+Here is the output of, "sudo crontab -e":
+58 22 * * * /home/andy/WikiScripts/wikiBackup /mnt/usbHD/wikiBackup/Daily/
+58 4 1 * * /home/andy/WikiScripts/wikiBackup /mnt/usbHD/wikiBackup/Monthly/
+
+
+
+Still to do:
+Fold in the wikiDump Extension command which writes out a static HTML version:
+sudo /usr/bin/php /usr/share/mediawiki/maintenance/DumpHTML/dumpHTML.php -d ~/wikidump -k monobook --image-snapshot --force-copy
