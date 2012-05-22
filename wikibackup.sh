@@ -15,8 +15,6 @@ dumpBackup="/usr/share/mediawiki/maintenance/dumpBackup.php"
 Images="/var/lib/mediawiki/images/"
 
 
-
-
 echo "Checking to make sure that the backup directory exists"
 
 if [ -d $backupdir ]

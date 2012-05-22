@@ -7,9 +7,7 @@ If there are more than a specified number of files in the target directory it wi
 Here is the output of, "sudo crontab -e":
 58 22 * * * /home/andy/WikiScripts/wikiBackup /mnt/usbHD/wikiBackup/Daily/
 58 4 1 * * /home/andy/WikiScripts/wikiBackup /mnt/usbHD/wikiBackup/Monthly/
+58 23 * * *  /usr/bin/php /usr/share/mediawiki/maintenance/DumpHTML/dumpHTML.php -d ~/mnt/usbHD/staticDump -k monobook --image-snapshot --force-copy
 
 
-
-Still to do:
-Fold in the wikiDump Extension command which writes out a static HTML version:
-sudo /usr/bin/php /usr/share/mediawiki/maintenance/DumpHTML/dumpHTML.php -d ~/wikidump -k monobook --image-snapshot --force-copy
+Remember: samulelabisawesome!!!
