@@ -1,8 +1,8 @@
-This is a simple set of wikibackupscripts. It is designed to work with turnkey linuxe's mediawiki. It was written for mediawiki 1.14. 
+This is a simple set of wikibackupscripts. It is designed to work with turnkey linux's mediawiki. It was written for mediawiki 1.14. 
 
 It does SQL dump, an XML dump and it copies over the supporting files. It auto tar gzips them. 
 
-If there are more than a specified number of files in the target directory it will through a specified number of the  oldest. This way you have a rolling backup, but it doesn't overflow.
+If there are more than a specified number of files in the target directory it will toss out a specified number of the  oldest backups. This way you have a rolling backup, with a bunch of timestamps but it doesn't overflow.
 
 Here is the output of, "sudo crontab -e":
 58 22 * * * /home/andy/WikiScripts/wikiBackup /mnt/usbHD/wikiBackup/Daily/
